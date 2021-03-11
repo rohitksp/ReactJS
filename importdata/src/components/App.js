@@ -7,7 +7,7 @@ const App = () => {
   const fetchData = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
-      .then((json) => setUser(json));
+      .then((data) => setUser(data));
   };
 
   useEffect(() => {
